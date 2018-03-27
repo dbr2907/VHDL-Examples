@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Dec 15 16:17:13 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Clock" LOCATE = SITE "P129" LEVEL 1;
+COMP "A" LOCATE = SITE "P47" LEVEL 1;
+COMP "Reset" LOCATE = SITE "P80" LEVEL 1;
+COMP "R" LOCATE = SITE "P48" LEVEL 1;
+COMP "V" LOCATE = SITE "P46" LEVEL 1;
+NET "Clock_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+SCHEMATIC END;
+

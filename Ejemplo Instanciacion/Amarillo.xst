@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/David/Documents/FPGA/InstanciacionE6/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/David/Documents/FPGA/InstanciacionE6/xst"
+elaborate
+-ifn Amarillo.prj
+-ifmt mixed

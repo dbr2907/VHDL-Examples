@@ -1,0 +1,10 @@
+AR verde behavioral C:/Users/David/Documents/FPGA/InstanciacionE6/VERDE.vhd sub00/vhpl03 1450217754
+EN verde NULL C:/Users/David/Documents/FPGA/InstanciacionE6/VERDE.vhd sub00/vhpl02 1450217753
+EN top NULL C:/Users/David/Documents/FPGA/InstanciacionE6/TOP.vhd sub00/vhpl08 1450217755
+EN amarillo NULL C:/Users/David/Documents/FPGA/InstanciacionE6/Amarillo.vhd sub00/vhpl04 1450217749
+EN rojo NULL C:/Users/David/Documents/FPGA/InstanciacionE6/Rojo.vhd sub00/vhpl06 1450217751
+AR rojo behavioral C:/Users/David/Documents/FPGA/InstanciacionE6/Rojo.vhd sub00/vhpl07 1450217752
+AR fsm behavioral C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.vhd sub00/vhpl01 1450217748
+AR amarillo behavioral C:/Users/David/Documents/FPGA/InstanciacionE6/Amarillo.vhd sub00/vhpl05 1450217750
+EN fsm NULL C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.vhd sub00/vhpl00 1450217747
+AR top behavioral C:/Users/David/Documents/FPGA/InstanciacionE6/TOP.vhd sub00/vhpl09 1450217756

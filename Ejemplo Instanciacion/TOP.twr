@@ -1,0 +1,538 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf
+
+Design file:              TOP.ncd
+Physical constraint file: TOP.pcf
+Device,package,speed:     xc3s50a,tq144,-5 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "Clock_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 2870 paths analyzed, 245 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.833ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_VERDE/VERDE (SLICE_X12Y2.BY), 24 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     77.500ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VERDE/Tiempo_4 (FF)
+  Destination:          Inst_VERDE/VERDE (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      5.729ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.104ns (0.408 - 0.512)
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_VERDE/Tiempo_4 to Inst_VERDE/VERDE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y21.YQ      Tcko                  0.596   Inst_VERDE/Tiempo<5>
+                                                       Inst_VERDE/Tiempo_4
+    SLICE_X19Y23.F3      net (fanout=2)        0.895   Inst_VERDE/Tiempo<4>
+    SLICE_X19Y23.COUT    Topcyf                1.026   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_lut<0>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<0>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X19Y24.CIN     net (fanout=1)        0.000   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X19Y24.COUT    Tbyp                  0.130   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<2>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X19Y25.CIN     net (fanout=1)        0.000   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X19Y25.COUT    Tbyp                  0.130   Inst_VERDE/Tiempo_cmp_eq0000
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<4>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<5>
+    SLICE_X12Y2.BY       net (fanout=26)       2.672   Inst_VERDE/Tiempo_cmp_eq0000
+    SLICE_X12Y2.CLK      Tdick                 0.280   Inst_VERDE/VERDE
+                                                       Inst_VERDE/VERDE
+    -------------------------------------------------  ---------------------------
+    Total                                      5.729ns (2.162ns logic, 3.567ns route)
+                                                       (37.7% logic, 62.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     77.553ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VERDE/Tiempo_7 (FF)
+  Destination:          Inst_VERDE/VERDE (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      5.676ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.104ns (0.408 - 0.512)
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_VERDE/Tiempo_7 to Inst_VERDE/VERDE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y20.XQ      Tcko                  0.521   Inst_VERDE/Tiempo<7>
+                                                       Inst_VERDE/Tiempo_7
+    SLICE_X19Y23.F1      net (fanout=2)        0.917   Inst_VERDE/Tiempo<7>
+    SLICE_X19Y23.COUT    Topcyf                1.026   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_lut<0>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<0>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X19Y24.CIN     net (fanout=1)        0.000   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X19Y24.COUT    Tbyp                  0.130   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<2>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X19Y25.CIN     net (fanout=1)        0.000   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X19Y25.COUT    Tbyp                  0.130   Inst_VERDE/Tiempo_cmp_eq0000
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<4>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<5>
+    SLICE_X12Y2.BY       net (fanout=26)       2.672   Inst_VERDE/Tiempo_cmp_eq0000
+    SLICE_X12Y2.CLK      Tdick                 0.280   Inst_VERDE/VERDE
+                                                       Inst_VERDE/VERDE
+    -------------------------------------------------  ---------------------------
+    Total                                      5.676ns (2.087ns logic, 3.589ns route)
+                                                       (36.8% logic, 63.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     77.626ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VERDE/Tiempo_0 (FF)
+  Destination:          Inst_VERDE/VERDE (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      5.616ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.091ns (0.408 - 0.499)
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_VERDE/Tiempo_0 to Inst_VERDE/VERDE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y18.YQ      Tcko                  0.596   Inst_VERDE/Tiempo<1>
+                                                       Inst_VERDE/Tiempo_0
+    SLICE_X19Y25.F3      net (fanout=2)        1.042   Inst_VERDE/Tiempo<0>
+    SLICE_X19Y25.COUT    Topcyf                1.026   Inst_VERDE/Tiempo_cmp_eq0000
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_lut<4>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<4>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<5>
+    SLICE_X12Y2.BY       net (fanout=26)       2.672   Inst_VERDE/Tiempo_cmp_eq0000
+    SLICE_X12Y2.CLK      Tdick                 0.280   Inst_VERDE/VERDE
+                                                       Inst_VERDE/VERDE
+    -------------------------------------------------  ---------------------------
+    Total                                      5.616ns (1.902ns logic, 3.714ns route)
+                                                       (33.9% logic, 66.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_VERDE/VDN (SLICE_X15Y18.CE), 25 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     77.537ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VERDE/Tiempo_4 (FF)
+  Destination:          Inst_VERDE/VDN (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      5.677ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.119ns (0.393 - 0.512)
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_VERDE/Tiempo_4 to Inst_VERDE/VDN
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y21.YQ      Tcko                  0.596   Inst_VERDE/Tiempo<5>
+                                                       Inst_VERDE/Tiempo_4
+    SLICE_X19Y23.F3      net (fanout=2)        0.895   Inst_VERDE/Tiempo<4>
+    SLICE_X19Y23.COUT    Topcyf                1.026   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_lut<0>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<0>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X19Y24.CIN     net (fanout=1)        0.000   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X19Y24.COUT    Tbyp                  0.130   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<2>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X19Y25.CIN     net (fanout=1)        0.000   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X19Y25.COUT    Tbyp                  0.130   Inst_VERDE/Tiempo_cmp_eq0000
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<4>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<5>
+    SLICE_X14Y19.G1      net (fanout=26)       1.829   Inst_VERDE/Tiempo_cmp_eq0000
+    SLICE_X14Y19.Y       Tilo                  0.616   Inst_VERDE/VDN_not0001
+                                                       Inst_VERDE/VDN_not00011
+    SLICE_X15Y18.CE      net (fanout=1)        0.300   Inst_VERDE/VDN_not0001
+    SLICE_X15Y18.CLK     Tceck                 0.155   Inst_VERDE/VDN
+                                                       Inst_VERDE/VDN
+    -------------------------------------------------  ---------------------------
+    Total                                      5.677ns (2.653ns logic, 3.024ns route)
+                                                       (46.7% logic, 53.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     77.590ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VERDE/Tiempo_7 (FF)
+  Destination:          Inst_VERDE/VDN (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      5.624ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.119ns (0.393 - 0.512)
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_VERDE/Tiempo_7 to Inst_VERDE/VDN
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y20.XQ      Tcko                  0.521   Inst_VERDE/Tiempo<7>
+                                                       Inst_VERDE/Tiempo_7
+    SLICE_X19Y23.F1      net (fanout=2)        0.917   Inst_VERDE/Tiempo<7>
+    SLICE_X19Y23.COUT    Topcyf                1.026   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_lut<0>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<0>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X19Y24.CIN     net (fanout=1)        0.000   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X19Y24.COUT    Tbyp                  0.130   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<2>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X19Y25.CIN     net (fanout=1)        0.000   Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X19Y25.COUT    Tbyp                  0.130   Inst_VERDE/Tiempo_cmp_eq0000
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<4>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<5>
+    SLICE_X14Y19.G1      net (fanout=26)       1.829   Inst_VERDE/Tiempo_cmp_eq0000
+    SLICE_X14Y19.Y       Tilo                  0.616   Inst_VERDE/VDN_not0001
+                                                       Inst_VERDE/VDN_not00011
+    SLICE_X15Y18.CE      net (fanout=1)        0.300   Inst_VERDE/VDN_not0001
+    SLICE_X15Y18.CLK     Tceck                 0.155   Inst_VERDE/VDN
+                                                       Inst_VERDE/VDN
+    -------------------------------------------------  ---------------------------
+    Total                                      5.624ns (2.578ns logic, 3.046ns route)
+                                                       (45.8% logic, 54.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     77.663ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_VERDE/Tiempo_0 (FF)
+  Destination:          Inst_VERDE/VDN (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      5.564ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.106ns (0.393 - 0.499)
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_VERDE/Tiempo_0 to Inst_VERDE/VDN
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y18.YQ      Tcko                  0.596   Inst_VERDE/Tiempo<1>
+                                                       Inst_VERDE/Tiempo_0
+    SLICE_X19Y25.F3      net (fanout=2)        1.042   Inst_VERDE/Tiempo<0>
+    SLICE_X19Y25.COUT    Topcyf                1.026   Inst_VERDE/Tiempo_cmp_eq0000
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_lut<4>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<4>
+                                                       Inst_VERDE/Tiempo_cmp_eq0000_wg_cy<5>
+    SLICE_X14Y19.G1      net (fanout=26)       1.829   Inst_VERDE/Tiempo_cmp_eq0000
+    SLICE_X14Y19.Y       Tilo                  0.616   Inst_VERDE/VDN_not0001
+                                                       Inst_VERDE/VDN_not00011
+    SLICE_X15Y18.CE      net (fanout=1)        0.300   Inst_VERDE/VDN_not0001
+    SLICE_X15Y18.CLK     Tceck                 0.155   Inst_VERDE/VDN
+                                                       Inst_VERDE/VDN
+    -------------------------------------------------  ---------------------------
+    Total                                      5.564ns (2.393ns logic, 3.171ns route)
+                                                       (43.0% logic, 57.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_Rojo/RDN (SLICE_X14Y12.CE), 25 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     77.767ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Rojo/Tiempo_4 (FF)
+  Destination:          Inst_Rojo/RDN (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      5.380ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.186ns (0.392 - 0.578)
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_Rojo/Tiempo_4 to Inst_Rojo/RDN
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y2.YQ       Tcko                  0.596   Inst_Rojo/Tiempo<5>
+                                                       Inst_Rojo/Tiempo_4
+    SLICE_X17Y5.F1       net (fanout=2)        1.097   Inst_Rojo/Tiempo<4>
+    SLICE_X17Y5.COUT     Topcyf                1.026   Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<1>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_lut<0>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<0>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X17Y6.CIN      net (fanout=1)        0.000   Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X17Y6.COUT     Tbyp                  0.130   Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<3>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<2>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X17Y7.CIN      net (fanout=1)        0.000   Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X17Y7.COUT     Tbyp                  0.130   Inst_Rojo/Tiempo_cmp_eq0000
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<4>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<5>
+    SLICE_X15Y13.G2      net (fanout=26)       1.122   Inst_Rojo/Tiempo_cmp_eq0000
+    SLICE_X15Y13.Y       Tilo                  0.561   Inst_FSM/R_EN
+                                                       Inst_Rojo/RDN_not00011
+    SLICE_X14Y12.CE      net (fanout=1)        0.563   Inst_Rojo/RDN_not0001
+    SLICE_X14Y12.CLK     Tceck                 0.155   Inst_Rojo/RDN
+                                                       Inst_Rojo/RDN
+    -------------------------------------------------  ---------------------------
+    Total                                      5.380ns (2.598ns logic, 2.782ns route)
+                                                       (48.3% logic, 51.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     78.054ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Rojo/Tiempo_17 (FF)
+  Destination:          Inst_Rojo/RDN (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      5.127ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.152ns (0.392 - 0.544)
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_Rojo/Tiempo_17 to Inst_Rojo/RDN
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y8.XQ       Tcko                  0.521   Inst_Rojo/Tiempo<17>
+                                                       Inst_Rojo/Tiempo_17
+    SLICE_X17Y6.G4       net (fanout=2)        1.066   Inst_Rojo/Tiempo<17>
+    SLICE_X17Y6.COUT     Topcyg                1.009   Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<3>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_lut<3>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X17Y7.CIN      net (fanout=1)        0.000   Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X17Y7.COUT     Tbyp                  0.130   Inst_Rojo/Tiempo_cmp_eq0000
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<4>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<5>
+    SLICE_X15Y13.G2      net (fanout=26)       1.122   Inst_Rojo/Tiempo_cmp_eq0000
+    SLICE_X15Y13.Y       Tilo                  0.561   Inst_FSM/R_EN
+                                                       Inst_Rojo/RDN_not00011
+    SLICE_X14Y12.CE      net (fanout=1)        0.563   Inst_Rojo/RDN_not0001
+    SLICE_X14Y12.CLK     Tceck                 0.155   Inst_Rojo/RDN
+                                                       Inst_Rojo/RDN
+    -------------------------------------------------  ---------------------------
+    Total                                      5.127ns (2.376ns logic, 2.751ns route)
+                                                       (46.3% logic, 53.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     78.110ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_Rojo/Tiempo_8 (FF)
+  Destination:          Inst_Rojo/RDN (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      5.045ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.178ns (0.392 - 0.570)
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_Rojo/Tiempo_8 to Inst_Rojo/RDN
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y4.YQ       Tcko                  0.596   Inst_Rojo/Tiempo<9>
+                                                       Inst_Rojo/Tiempo_8
+    SLICE_X17Y5.F4       net (fanout=2)        0.762   Inst_Rojo/Tiempo<8>
+    SLICE_X17Y5.COUT     Topcyf                1.026   Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<1>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_lut<0>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<0>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X17Y6.CIN      net (fanout=1)        0.000   Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<1>
+    SLICE_X17Y6.COUT     Tbyp                  0.130   Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<3>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<2>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X17Y7.CIN      net (fanout=1)        0.000   Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<3>
+    SLICE_X17Y7.COUT     Tbyp                  0.130   Inst_Rojo/Tiempo_cmp_eq0000
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<4>
+                                                       Inst_Rojo/Tiempo_cmp_eq0000_wg_cy<5>
+    SLICE_X15Y13.G2      net (fanout=26)       1.122   Inst_Rojo/Tiempo_cmp_eq0000
+    SLICE_X15Y13.Y       Tilo                  0.561   Inst_FSM/R_EN
+                                                       Inst_Rojo/RDN_not00011
+    SLICE_X14Y12.CE      net (fanout=1)        0.563   Inst_Rojo/RDN_not0001
+    SLICE_X14Y12.CLK     Tceck                 0.155   Inst_Rojo/RDN
+                                                       Inst_Rojo/RDN
+    -------------------------------------------------  ---------------------------
+    Total                                      5.045ns (2.598ns logic, 2.447ns route)
+                                                       (51.5% logic, 48.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "Clock_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_Rojo/ROJO (SLICE_X12Y1.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.837ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_FSM/R_EN (FF)
+  Destination:          Inst_Rojo/ROJO (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.893ns (Levels of Logic = 0)
+  Clock Path Skew:      0.056ns (0.256 - 0.200)
+  Source Clock:         Clock_BUFGP rising at 83.333ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_FSM/R_EN to Inst_Rojo/ROJO
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y13.XQ      Tcko                  0.396   Inst_FSM/R_EN
+                                                       Inst_FSM/R_EN
+    SLICE_X12Y1.CE       net (fanout=15)       0.497   Inst_FSM/R_EN
+    SLICE_X12Y1.CLK      Tckce       (-Th)     0.000   Inst_Rojo/ROJO
+                                                       Inst_Rojo/ROJO
+    -------------------------------------------------  ---------------------------
+    Total                                      0.893ns (0.396ns logic, 0.497ns route)
+                                                       (44.3% logic, 55.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_VERDE/VERDE (SLICE_X12Y2.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.967ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_FSM/V_EN (FF)
+  Destination:          Inst_VERDE/VERDE (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.021ns (Levels of Logic = 0)
+  Clock Path Skew:      0.054ns (0.254 - 0.200)
+  Source Clock:         Clock_BUFGP rising at 83.333ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_FSM/V_EN to Inst_VERDE/VERDE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y16.XQ      Tcko                  0.417   Inst_FSM/V_EN
+                                                       Inst_FSM/V_EN
+    SLICE_X12Y2.CE       net (fanout=15)       0.604   Inst_FSM/V_EN
+    SLICE_X12Y2.CLK      Tckce       (-Th)     0.000   Inst_VERDE/VERDE
+                                                       Inst_VERDE/VERDE
+    -------------------------------------------------  ---------------------------
+    Total                                      1.021ns (0.417ns logic, 0.604ns route)
+                                                       (40.8% logic, 59.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_Rojo/Tiempo_21 (SLICE_X18Y10.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.068ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_FSM/R_EN (FF)
+  Destination:          Inst_Rojo/Tiempo_21 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.201ns (Levels of Logic = 0)
+  Clock Path Skew:      0.133ns (0.525 - 0.392)
+  Source Clock:         Clock_BUFGP rising at 83.333ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_FSM/R_EN to Inst_Rojo/Tiempo_21
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y13.XQ      Tcko                  0.396   Inst_FSM/R_EN
+                                                       Inst_FSM/R_EN
+    SLICE_X18Y10.CE      net (fanout=15)       0.805   Inst_FSM/R_EN
+    SLICE_X18Y10.CLK     Tckce       (-Th)     0.000   Inst_Rojo/Tiempo<21>
+                                                       Inst_Rojo/Tiempo_21
+    -------------------------------------------------  ---------------------------
+    Total                                      1.201ns (0.396ns logic, 0.805ns route)
+                                                       (33.0% logic, 67.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "Clock_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: Inst_VERDE/Tiempo<13>/CLK
+  Logical resource: Inst_VERDE/Tiempo_13/CK
+  Location pin: SLICE_X16Y25.CLK
+  Clock network: Clock_BUFGP
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 83.333ns
+  High pulse: 41.666ns
+  High pulse limit: 0.664ns (Tch)
+  Physical resource: Inst_VERDE/Tiempo<13>/CLK
+  Logical resource: Inst_VERDE/Tiempo_13/CK
+  Location pin: SLICE_X16Y25.CLK
+  Clock network: Clock_BUFGP
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: Inst_VERDE/Tiempo<13>/CLK
+  Logical resource: Inst_VERDE/Tiempo_12/CK
+  Location pin: SLICE_X16Y25.CLK
+  Clock network: Clock_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    5.833|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 2870 paths, 0 nets, and 444 connections
+
+Design statistics:
+   Minimum period:   5.833ns{1}   (Maximum frequency: 171.438MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Dec 15 16:17:23 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 192 MB
+
+
+

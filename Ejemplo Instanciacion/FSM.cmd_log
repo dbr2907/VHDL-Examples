@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.xst" -ofn "C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.syr" 
+xst -intstyle ise -ifn "C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.xst" -ofn "C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.syr" 
+xst -intstyle ise -ifn "C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.xst" -ofn "C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.syr" 
+xst -intstyle ise -ifn "C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.xst" -ofn "C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.syr" 
+xst -intstyle ise -ifn "C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.xst" -ofn "C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.syr" 
+vhdtdtfi -prj InstanciacionE6 -o C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.vhi -module FSM -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work FSM.vhd 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\David\Documents\FPGA\InstanciacionE6\TOP.ncd
+OUTFILE=C:\Users\David\Documents\FPGA\InstanciacionE6\TOP.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5tq144
+WORKINGDIR=C:\Users\David\Documents\FPGA\InstanciacionE6
+LICENSE=WebPack
+USER_INFO=210946784_0_0_413

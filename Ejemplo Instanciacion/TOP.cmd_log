@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/David/Documents/FPGA/InstanciacionE6/TOP.xst" -ofn "C:/Users/David/Documents/FPGA/InstanciacionE6/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/David/Documents/FPGA/NumatoUCF.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 

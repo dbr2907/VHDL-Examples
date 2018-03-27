@@ -1,0 +1,5 @@
+vhdl work "VERDE.vhd"
+vhdl work "Rojo.vhd"
+vhdl work "FSM.vhd"
+vhdl work "Amarillo.vhd"
+vhdl work "TOP.vhd"

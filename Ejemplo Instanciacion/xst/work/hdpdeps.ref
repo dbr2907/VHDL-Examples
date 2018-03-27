@@ -1,0 +1,30 @@
+V3 19
+FL C:/Users/David/Documents/FPGA/InstanciacionE6/Amarillo.vhd 2015/12/15.16:01:04 P.20131013
+EN work/Amarillo 1450217749 \
+      FL C:/Users/David/Documents/FPGA/InstanciacionE6/Amarillo.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Amarillo/Behavioral 1450217750 \
+      FL C:/Users/David/Documents/FPGA/InstanciacionE6/Amarillo.vhd \
+      EN work/Amarillo 1450217749
+FL C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.vhd 2015/12/15.15:48:21 P.20131013
+EN work/FSM 1450217747 FL C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/FSM/Behavioral 1450217748 \
+      FL C:/Users/David/Documents/FPGA/InstanciacionE6/FSM.vhd EN work/FSM 1450217747
+FL C:/Users/David/Documents/FPGA/InstanciacionE6/Rojo.vhd 2015/12/15.16:02:35 P.20131013
+EN work/Rojo 1450217751 FL C:/Users/David/Documents/FPGA/InstanciacionE6/Rojo.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Rojo/Behavioral 1450217752 \
+      FL C:/Users/David/Documents/FPGA/InstanciacionE6/Rojo.vhd EN work/Rojo 1450217751
+FL C:/Users/David/Documents/FPGA/InstanciacionE6/TOP.vhd 2015/12/15.16:13:07 P.20131013
+EN work/TOP 1450217755 FL C:/Users/David/Documents/FPGA/InstanciacionE6/TOP.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/TOP/Behavioral 1450217756 \
+      FL C:/Users/David/Documents/FPGA/InstanciacionE6/TOP.vhd EN work/TOP 1450217755 \
+      CP FSM CP Amarillo CP Rojo CP VERDE
+FL C:/Users/David/Documents/FPGA/InstanciacionE6/VERDE.vhd 2015/12/15.15:58:45 P.20131013
+EN work/VERDE 1450217753 \
+      FL C:/Users/David/Documents/FPGA/InstanciacionE6/VERDE.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/VERDE/Behavioral 1450217754 \
+      FL C:/Users/David/Documents/FPGA/InstanciacionE6/VERDE.vhd EN work/VERDE 1450217753
