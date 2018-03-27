@@ -1,4 +1,17 @@
 
+----------------------------------------------------------------------------------
+--This work is licensed under a
+--Creative Commons Attribution-NonCommmercial-ShareAlike 4.0 International
+--This license lets others remix, tweak, and build upon this work non-commercially,
+--as long as they credit the AUTHOR and license their new creations under the identical terms.
+
+--Author: David Barrientos (2015)
+--Simple VHDL Examples
+--d[dot]b[dot]gt[at]ieee[dot]org
+--Universidad de San Carlos de Guatemala
+--EE School
+----------------------------------------------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
